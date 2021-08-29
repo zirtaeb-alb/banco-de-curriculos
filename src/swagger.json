@@ -1,0 +1,118 @@
+{
+    "openapi": "3.0.0",
+
+    "info":{
+        "title": "API do Desafio Banco de Currículos",
+        "description": "Essa é a API do Banco de Currículos",
+        "version": "0.0.1"
+    },
+
+    "servers": [
+        {
+            "url": "http://localhost:8000",
+            "description": "Ambiente de desenvolvimento"
+        }
+    ],
+
+    "paths": {
+        "/register": {
+            "post": {
+                "summary": "Cadastro de Candidatos",
+                "description": "Rota de cadastro de usuário, recebe: email, sexo, nome, cep, profissao, uf, dN, estadoCivil, endereco, numero, bairro, cidade, tel1, tel2, celular, rg, cpf, cnh e carro",
+                "tags": ["candidato"],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "properties": {
+                                    "email": {
+                                        "type": "string"
+                                    },
+                                    "sexo":{
+                                        "type":"string"
+                                    },
+                                    "nome":{
+                                        "type":"string"
+                                    },
+                                    "cep":{
+                                        "type":"string"
+                                    },
+                                    "profissao":{
+                                        "type":"string"
+                                    },
+                                    "uf":{
+                                        "type":"string"
+                                    },
+                                    "dN":{
+                                        "type":"string"
+                                    },
+                                    "estadoCivil":{
+                                        "type":"string"
+                                    },
+                                    "endereco":{
+                                        "type":"string"
+                                    },
+                                    "numero":{
+                                        "type":"string"
+                                    },
+                                    "bairro":{
+                                        "type":"string"
+                                    },
+                                    "cidade":{
+                                        "type":"string"
+                                    },
+                                    "tel1":{
+                                        "type":"string"
+                                    },
+                                    "tel2":{
+                                        "type":"string"
+                                    },
+                                    "celular":{
+                                        "type":"string"
+                                    },
+                                    "rg":{
+                                        "type":"string"
+                                    },
+                                    "cpf":{
+                                        "type":"string"
+                                    },
+                                    "cnh":{
+                                        "type":"string"
+                                    },
+                                    "carro":{
+                                        "type":"string"
+                                    }
+                                }
+                            },
+                            "examples": {
+                                "fulano": {
+                                    "value": {
+                                        "name": "Fulano Silva",
+                                        "profissao": "Mecanico",
+                                        "dN": "14/07/1995",
+                                        "estadoCivil": "solteiro(a)",
+                                        "sexo": "Masculino",
+                                        "cep": "00000-000",
+                                        "endereco":"rua x",
+                                        "numero": "10",
+                                        "bairro": "y",
+                                        "cidade": "Salvador",
+                                        "uf": "Bahia",
+                                        "tel1": "3333-3333",
+                                        "tel2": "3333-3334",
+                                        "celular": "(ddd) 99999-9999",
+                                        "email": "fulaninho@exemplo.com",
+                                        "rg": "00.000.000-0",
+                                        "cpf": "000.000.000-00",
+                                        "cnh": "sim",
+                                        "carro": "sim"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

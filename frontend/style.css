@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color:rgb(3, 245, 245);
+    text-align:center;
+    font-family: 'Raleway', sans-serif;
+}
+
+body{
+    background-image: url("./imagens/earth\ from\ the\ outside.jpg"); 
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center fixed;
+}
+
+header{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 1px 1px 5px 1px rgb(24, 221, 247);
+    font-weight: 900;
+    font-style: italic;
+    font-size: 20px;
+}
+
+#logo img{
+    max-width: 80px;
+    display: left; 
+}
+
+#cadastre{
+    padding: 120px 50px 50px 50px;
+    font-size: 25px;
+    font-style: oblique;
+}
+
+#formulario{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-items:left;
+    background-color: rgba(218, 218, 218, 0.267);
+    height: 900px;
+    width: 1000px;
+    margin-right: auto;
+    margin-left:auto;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 30px 15px 0px 60px ;
+    
+    
+}
+
+#formulario label{
+    position: relative;
+    font-size: 20px;
+    font-weight:700;
+    font-style: oblique;
+}
+
+#formulario input, #formulario select{
+    padding: 5px 10px;
+    margin-right:15px;
+    border-radius: 5px;
+    border:none ;
+    font-size: 18px;
+    box-sizing:border-box;
+    background:rgba(206, 191, 191, 0.466);
+    color:rgb(255, 255, 255);
+    font-weight: 600;
+}
+
+#formulario #button button{
+    width: 200px;
+    height: 50px;
+    background-position: right bottom;
+    border:none;
+    cursor:pointer;
+    border-radius: 5px;    
+    background:rgba(206, 191, 191, 0.466);
+    font-weight: bold;
+    justify-self:center;
+    color:rgb(3, 245, 245);
+    font-size: 18px;
+    font-weight: 600;
+
+}
+
+#formulario ::placeholder{
+    color:rgb(255, 255, 255);
+}
+
+@media only screen and (max-width: 768px){
+    #formulario{
+        width: 100%;
+    }
+}
